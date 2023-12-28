@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function fyes() {
-    window.location.href = "/yes";
+    window.location.href = "./yes";
 }
 
 function fno() {
