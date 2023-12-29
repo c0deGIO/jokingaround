@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // This code centers the "Yes", "No" buttons because I suck at CSS
+    // This code centers the "Yes", "No" buttons because I can't use CSS properly
 
     let marg = 100;
     var x = Math.round((window.innerWidth - marg) / 2 - 100);
@@ -13,16 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function fyes() {
-    window.location.href = "./yes";
+    window.location.href = "yes";
 }
 
 function fno() {
-    console.log("No1");
     let btnNo = document.getElementById('no');
-    var x = Math.round(Math.random() * (window.innerWidth - 200));
-    var y = Math.round(Math.random() * (window.innerHeight - 150));
+    let cl = window;
+    var x = Math.round(Math.random() * (cl.innerWidth - 200));
+    var y = Math.round(Math.random() * (cl.innerHeight - 150));
     x = 25 + x;
-    y = 25 + y;
+    y = -125 + y;
+    console.log(x, y, cl.innerWidth, cl.innerHeight);
     btnNo.style.left = `${x}px`;
     btnNo.style.top = `${y}px`;
 }
